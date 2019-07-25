@@ -10,6 +10,6 @@ end
 
 @topic = ["satire", "business news", "comedy", "satire"].sample
 
-client.search(@topic).take(5).each do |tweet|
+client.search(@topic).take(2).each do |tweet|
 	client.favorite(tweet)
 end
